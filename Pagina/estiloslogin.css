@@ -6,28 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.container {
-    max-width: 80%;
-    margin: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.menu-item {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    padding: 10px 0;
-}
-
-.menu-item img {
-    max-width: 100px;
-    max-height: 100px;
-    margin-right: 20px;
+    height: 100vh; /* Ajusta la altura al 100% de la ventana */
 }
 
 header {
@@ -82,30 +61,6 @@ header {
     background-color: #555;
 }
 
-.menu-right {
-    display: flex;
-    align-items: center;
-}
-
-.btn-login, .btn-cart {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    margin-left: 10px;
-    cursor: pointer;
-}
-
-.btn-login:hover, .btn-cart:hover, .dropbtn:hover{
-    background-color: #555;
-}
-
-.menu-title {
-    text-align: center; 
-    font-size: 24px; 
-    font-family: 'Arial', sans-serif; 
-}
-
 .menu-title-container {
     display: flex;
     align-items: center; /* Centrar verticalmente */
@@ -117,22 +72,44 @@ header {
     margin: 0 20px; /* Espacio entre el título y las imágenes de los globos */
 }
 
-/* cart.css */
-
-.cart-container {
-    position: fixed;
-    top: 86px; /* Ajusta la posición vertical debajo del menú */
-    right: -300px; /* Inicialmente oculto en el lado derecho */
-    width: 300px;
-    height: 100%;
+.container {
+    width: 400px; /* Ancho del cuadro de inicio de sesión */
+    margin: auto; /* Centrar horizontalmente */
+    margin-top: 100px; /* Ajusta la distancia desde la parte superior */
+    padding: 20px;
     background-color: #fff;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s;
-    z-index: 999;
-    overflow-y: auto; /* Agregar desplazamiento si es necesario */
 }
 
-.show-cart {
-    right: 0; /* Mostrar en el lado derecho */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Alinea el contenido a la izquierda */
+    margin-top: 20px; /* Espacio entre el encabezado y el formulario */
 }
 
+label {
+    margin-top: 10px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 25px; /* Ajusta el margen superior del botón */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

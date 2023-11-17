@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura al 100% de la ventana */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.menu-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border: 5px solid black;
+}
+
+.menu-left {
+    display: flex;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 200px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  #333;
+    min-width: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
+.menu-title-container {
+    display: flex;
+    align-items: center; /* Centrar verticalmente */
+}
+
+.balloon-image {
+    width: 30px; /* Ajusta el ancho de la imagen del globo */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    margin: 0 20px; /* Espacio entre el título y las imágenes de los globos */
+}
+
+.container {
+    width: 400px; /* Ancho del formulario de registro */
+    margin: auto; /* Centrar horizontalmente */
+    margin-top: 50px; /* Ajusta la distancia desde la parte superior */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Alinea el contenido a la izquierda */
+    margin-top: 20px; /* Espacio entre el encabezado y el formulario */
+}
+
+label {
+    margin-top: 10px;
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 15px; /* Ajusta el margen superior del botón */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Estilos para el enlace de registro */
+p {
+    margin-top: 15px; /* Ajusta el margen superior del párrafo con el enlace */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
