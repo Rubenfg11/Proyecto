@@ -12,9 +12,9 @@ router.get('/',async(req,res)=>{                //Cuando ataques la url '/' va a
     }
 })  
 
-router.get('/:songId',async (req,res)=>{
-    const{songID}=req.params;
-    const song= await Song.findById(songID); async
+router.get('/:songId',async (req, res) =>{
+    const{ songId }=req.params;
+    const song= await Song.findById(songId);
     res.json(song);
 })
 
